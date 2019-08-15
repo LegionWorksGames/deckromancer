@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour {
     bool movementCooldown = false;
     [SerializeField] float cooldownTime = 1;
     [SerializeField] float speed = 1;
+    Animator animator;
     
     // Start is called before the first frame update
     void Start () {
-
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,10 +37,14 @@ public class PlayerController : MonoBehaviour {
                 print("Move down");
             } else if (y > 0.5f && x > -0.25f && x < 0.25f) {
                 // Move up
-                StartCoroutine(Movement(true, true));
-                
+                StartCoroutine(Movement(true, true));                
             }
         }
+    }
+
+    void ChangeDirection(float h, float v){
+        animator.SetFloat("horizontal", h);
+        animator.SetFloat("vertical", v);
     }
 
     IEnumerator Movement(bool vertical, bool positive){
@@ -47,21 +52,26 @@ public class PlayerController : MonoBehaviour {
         float startTime = Time.time;
         Vector3 startPos = transform.position;
         Vector3 endPos = startPos;
+        animator.SetBool("walking", true);
         if(vertical && positive)
         {
             endPos = new Vector3(startPos.x, startPos.y + 1, 0);
+            ChangeDirection(0, 1);
         }
         else if(vertical && !positive)
         {
             endPos = new Vector3(startPos.x, startPos.y -1, 0);
+            ChangeDirection(0, -1);
         }
         else if(!vertical && positive)
         {
             endPos = new Vector3(startPos.x + 1, startPos.y, 0);
+            ChangeDirection(1, 0);
         }
         else if(!vertical && !positive)
         {
             endPos = new Vector3(startPos.x - 1, startPos.y, 0);
+            ChangeDirection(-1, 0);
         }
         
 
@@ -78,6 +88,7 @@ public class PlayerController : MonoBehaviour {
         }
         transform.position = endPos;   
         movementCooldown = false;
+        animator.SetBool("walking", false);
     }
 
     void EndCoolDown(){
