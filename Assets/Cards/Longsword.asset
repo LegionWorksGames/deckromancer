@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a2d4ff3799067e44918822dc3be159f, type: 3}
-  m_Name: New Card
+  m_Name: Longsword
   m_EditorClassIdentifier: 
-  cardName: 
-  description: 
+  cardName: Long Sword
+  description: 'Attack 3 squares in any direction.
+
+
+    Deal 1 damage a square.'
   type: 0
-  image: {fileID: 0}
-  cost: 0
-  recycle: 0
+  image: {fileID: 21300182, guid: 9de235eaa212a02478cdbd98090ee58f, type: 3}
+  cost: 1
+  recycle: 1

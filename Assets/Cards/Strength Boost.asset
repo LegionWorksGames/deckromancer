@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2d4ff3799067e44918822dc3be159f, type: 3}
   m_Name: Strength Boost
   m_EditorClassIdentifier: 
-  cardName: 
-  description: 
-  type: 3
-  image: {fileID: 0}
+  cardName: Strength Boost
+  description: Push heavy objects up to 5 squares.
+  type: 2
+  image: {fileID: 21300460, guid: 9de235eaa212a02478cdbd98090ee58f, type: 3}
   cost: 1
   recycle: 1
