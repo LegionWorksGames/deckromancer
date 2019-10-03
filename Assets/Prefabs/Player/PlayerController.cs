@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : Actors {
     bool movementCooldown = false;
     [SerializeField] float cooldownTime = 1;
     [SerializeField] float speed = 1;
