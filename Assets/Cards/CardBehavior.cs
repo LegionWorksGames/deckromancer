@@ -27,7 +27,7 @@ public class CardBehavior : MonoBehaviour
                 images[1].sprite = foreground[2];
                 images[2].sprite = icons[2];
                 break;
-            case CardType.general:
+            case CardType.buff:
                 images[1].sprite = foreground[3];
                 images[2].sprite = icons[3];
                 break;
@@ -41,6 +41,10 @@ public class CardBehavior : MonoBehaviour
         texts[0].text = card.GetCost().ToString();
         texts[1].text = card.GetCardName();
         texts[2].text = card.GetDescription();
+
+        if(!card.IsRecyclable()){
+            images[3].gameObject.SetActive(false);
+        }
     }
 
     public Card GetCard(){ return card; }

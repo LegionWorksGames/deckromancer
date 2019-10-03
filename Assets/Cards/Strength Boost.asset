@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Strength Boost
   description: Push heavy objects up to 5 squares.
-  type: 2
-  image: {fileID: 21300460, guid: 9de235eaa212a02478cdbd98090ee58f, type: 3}
+  type: 3
+  image: {fileID: 21300000, guid: 3cece7d8eea2dcb4d93f5443b882b10f, type: 3}
   cost: 1
-  recycle: 1
+  recycle: 0

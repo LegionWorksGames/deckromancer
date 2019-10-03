@@ -2991,11 +2991,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ede004c8ee1ba734493f25d68184afe8, type: 2}
   - {fileID: 11400000, guid: 68bb158ab5ff62b44a7a7b84c6990577, type: 2}
   - {fileID: 11400000, guid: ede004c8ee1ba734493f25d68184afe8, type: 2}
-  - {fileID: 11400000, guid: 68bb158ab5ff62b44a7a7b84c6990577, type: 2}
-  - {fileID: 11400000, guid: 9d3c7e1ad54814e4a948a4ff467cbd48, type: 2}
+  - {fileID: 11400000, guid: f6956f632aedd274faded5f3eb7a4286, type: 2}
+  - {fileID: 11400000, guid: a7bfbcda6a4e7c249843319b80b86520, type: 2}
   - {fileID: 11400000, guid: 68bb158ab5ff62b44a7a7b84c6990577, type: 2}
   - {fileID: 11400000, guid: ede004c8ee1ba734493f25d68184afe8, type: 2}
   - {fileID: 11400000, guid: 9d3c7e1ad54814e4a948a4ff467cbd48, type: 2}
+  - {fileID: 11400000, guid: f6956f632aedd274faded5f3eb7a4286, type: 2}
+  - {fileID: 11400000, guid: a7bfbcda6a4e7c249843319b80b86520, type: 2}
   cardBehavior: {fileID: 4753516518057118110, guid: 23080e5c2a4b6294dbbc19cea2001173,
     type: 3}
   handUI: {fileID: 1747077569}

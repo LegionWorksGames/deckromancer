@@ -5,9 +5,9 @@ using UnityEngine;
 public enum CardType
 {
     weapon,
-    healing,
-    buffs,
-    general
+    healing,    
+    general,
+    buff
 }
 
 [CreateAssetMenu (menuName = "Card")]
